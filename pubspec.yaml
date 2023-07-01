@@ -1,11 +1,11 @@
 name: flutter_lightbox
-description: A Simple Lightbox Component for Flutter with swiping and thumbnail capabilities. Created as I could not find any lightbox components for flutter that met my requirements. Supports many customisation options, please refer to github for more information. If you have any suggestions or improvements, feel free to raise issues or contribute by creating pull requests.
-version: 0.1.2
+description: A Simple Lightbox Component for Flutter with swiping and thumbnail capabilities. Created as I could not find any lightbox components that met my needs.
+version: 0.1.3
 homepage: https://github.com/ThePikachu/flutter_lightbox
 
 topics: 
 - flutter
-- lighthbox
+- lightbox
 - carousel
 - widgets
 - images

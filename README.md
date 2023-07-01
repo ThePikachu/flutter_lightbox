@@ -1,7 +1,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SherlockHolmes2045/flutter_lightbox/blob/master/LICENSE)
 
-A Simple Lightbox Component for Flutter with swiping and thumbnail capabilities.
+A Simple Lightbox Component for Flutter with swiping and thumbnail capabilities, supports many customisation features.
 If you have any suggestions or improvements, feel free to raise issues or contribute by creating pull requests.
 
 ## Demo
@@ -21,9 +21,9 @@ Wrap your images with an InkWell and add this to the onTap function().
       pageBuilder: (BuildContext context, Animation animation,
           Animation secondaryAnimation) {
         return LightBox(
-          initialIndex: index,
-          images: images,
-          imageType: imageType,
+          initialIndex: index, 
+          images: images, 
+          imageType: ImageType.network 
         );
       },
     );
@@ -37,14 +37,16 @@ Misc
 * animationDuration - how long is the swipe animation
 
 Image
+* initialIndex - initial image shown
 * imageWidth - width of Image
 * imageHeight - height of Image
 * imageFit - BoxFit of Image
+* imageType - ImageType of Image (assetImage, network)
 
 Thumbnail
-* thumbnailWidth - width of thumbnail
-* thumbnailHeight - height of thumbnail
-* thumbnailBorderSize - size of thumbnail border
+* thumbNailWidth - width of thumbnail
+* thumbNailHeight - height of thumbnail
+* thumbNailBorderSize - size of thumbnail border
 * thumbNailBorderRadius - border radius of thumbnail
 * thumbNailFocusedBorderColor - thumbnail focused border color
 * thumbNailUnFocusedBorderColor - thumbnail unfocused border color
