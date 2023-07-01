@@ -155,7 +155,7 @@ class _LightBoxState extends State<LightBox> {
                           return Container(
                             alignment: Alignment.center,
                             child: InteractiveViewer(
-                              child: Container(
+                              child: SizedBox(
                                 width: MediaQuery.of(context).size.width *
                                     widget.imageWidth,
                                 height: MediaQuery.of(context).size.height *

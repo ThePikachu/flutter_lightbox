@@ -1,7 +1,14 @@
 name: flutter_lightbox
 description: Simple lightbox component for flutter.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/ThePikachu/flutter_lightbox
+
+topics: 
+- flutter
+- lighthbox
+- carousel
+- widgets
+- images
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
