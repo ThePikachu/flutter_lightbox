@@ -1,7 +1,7 @@
 name: flutter_lightbox
-description: A new Flutter package project.
+description: Simple lightbox component for flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/ThePikachu/flutter_lightbox
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
