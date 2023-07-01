@@ -29,35 +29,66 @@ class LightBox extends StatefulWidget {
     this.thumbNailmarginFromBottom = 30,
   });
 
-  // List of images, currently support from assets and url
+  /// List of images path, currently support from assets and url
   final List<String> images;
-  // Type of Image, ImageType.ImageAsset or ImageType.Network
+
+  /// Type of Image, ImageType.ImageAsset or ImageType.Network
   final ImageType imageType;
-  // Starting Image Index of LightBox
+
+  /// Starting Image Index of LightBox
   final int initialIndex;
-  // Background Blur
+
+  /// Background Blur
   final double blur;
-  // Animation Type : Curves (For reference : https://api.flutter.dev/flutter/animation/Curves-class.html)
+
+  /// Animation Type : Curves (For reference : https://api.flutter.dev/flutter/animation/Curves-class.html)
   final Curve animationType;
-  // How long it takes to swipe to next image (in milliseconds)
-  // Value lower than 10 will be instant
+
+  /// How long it takes to swipe to next image (in milliseconds)
+  /// Value lower than 10 will be instant
   final int animationDuration;
 
-  // Image Properties
+  /// Image Properties
+  ///
+  /// width of image
   final double imageWidth;
+
+  /// height of image
   final double imageHeight;
+
+  /// boxFit of image
   final BoxFit imageFit;
 
-  // Thumbnail Properties
+  /// Thumbnail Properties
+  ///
+  /// width of thumbnail
   final double thumbnailWidth;
+
+  /// height of thumbnail
   final double thumbnailHeight;
+
+  /// border size of thumbnail
   final double thumbNailBorderSize;
+
+  /// border radius of thumbnail
   final double thumbNailBorderRadius;
+
+  /// focused border color of thumbnail
   final Color thumbNailFocusedBorderColor;
+
+  /// unofocused border color of thumbnail
   final Color thumbNailUnfocusedBorderColor;
+
+  /// opacity of thumbnail when unselected
   final double thumbNailUnFocusedOpacity;
+
+  /// gap between thumbnails
   final EdgeInsets thumbNailGap;
+
+  /// boxFit of thumbnail
   final BoxFit thumbNailFit;
+
+  /// margin from bottom for thumbnail
   final double thumbNailmarginFromBottom;
 
   @override
@@ -104,11 +135,11 @@ class _LightBoxState extends State<LightBox> {
   }
 
   Widget imageWidget(ImageType imageType, String url) {
-    if (imageType == ImageType.ImageAsset) {
+    if (imageType == ImageType.imageAsset) {
       return Image.asset(
         url,
       );
-    } else if (imageType == ImageType.Network) {
+    } else if (imageType == ImageType.network) {
       return Image.network(
         url,
       );

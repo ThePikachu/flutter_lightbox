@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SherlockHolmes2045/flutter_lightbox/blob/master/LICENSE)
 
 A Simple Lightbox Component for Flutter with swiping and thumbnail capabilities.
+If you have any suggestions or improvements, feel free to raise issues or contribute by creating pull requests.
 
 ## Demo
 <img src="https://github.com/ThePikachu/flutter_lightbox/assets/27757830/402dcc5d-8e85-4938-a017-3092308bdabe"  height="675">

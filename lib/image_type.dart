@@ -1,2 +1,7 @@
-// ignore: constant_identifier_names
-enum ImageType { ImageAsset, Network }
+enum ImageType {
+  /// If Images are from asset and uses image.asset
+  imageAsset,
+
+  /// If Images are from url and uses image.network
+  network
+}

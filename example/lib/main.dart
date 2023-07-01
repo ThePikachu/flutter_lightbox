@@ -9,7 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -58,12 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 context: context,
                 pageBuilder: (BuildContext context, Animation animation,
                     Animation secondaryAnimation) {
-                  return Center(
-                    child: LightBox(
-                      initialIndex: index,
-                      images: images,
-                      imageType: imageType,
-                    ),
+                  return LightBox(
+                    initialIndex: index,
+                    images: images,
+                    imageType: imageType,
                   );
                 },
               );
@@ -80,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: FittedBox(
                 fit: BoxFit.contain,
-                child: imageType == ImageType.Network
+                child: imageType == ImageType.network
                     ? Image.network(images[index])
                     : Image.asset(images[index]),
               ),
@@ -103,12 +100,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             const Text("Network Images Example"),
-            buildImageList(images, ImageType.Network),
+            buildImageList(images, ImageType.network),
             const SizedBox(
               height: 30,
             ),
             const Text("Asset Images Example"),
-            buildImageList(assetImages, ImageType.ImageAsset),
+            buildImageList(assetImages, ImageType.imageAsset),
+            const Text("")
           ],
         ),
       ),
